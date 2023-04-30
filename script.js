@@ -3,7 +3,11 @@ class Builder {
         this.value = value
 
     }
-    plus(...n)
+    plus(...n){
+        for(let value of n){
+            this.value += value
+        }
+    }
     minus(...n)
     multiply(n)
     divide(n)
