@@ -1,7 +1,6 @@
 class Builder {
     constructor(value){
         this.value = value
-
     }
     plus(...n){
         for(let value of n){
@@ -28,7 +27,6 @@ class Builder {
         return this.value
     }
 }
-
 
 class IntBuilder extends Builder{
     mod(n){
@@ -85,7 +83,7 @@ console.log(IntBuilder.random(10, 100));          // 42;
 //   .multiply(2)                       // 28;
 //   .divide(4)                         // 7;
 //   .mod(3)                            // 1;
-//   .get());                      
+//   .get());
 
 // let strBuilder = new StringBuilder('Hello'); // 'Hello';
 //   console.log(strBuilder
@@ -95,4 +93,4 @@ console.log(IntBuilder.random(10, 100));          // 42;
 //     .divide(4)                                 // 'Hell';
 //     .remove('l')                               // 'He';
 //     .sub(1,1)                                  // 'e';
-//     .get());    
+//     .get());
